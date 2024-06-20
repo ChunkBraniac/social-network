@@ -12,11 +12,7 @@ class UserController extends Controller
     //
     public function home()
     {
-        if (Auth::check()) {
-            return view('home');
-        } else {
-            return view('auth.login');
-        }
+        return view('home');
     }
 
     public function login()
